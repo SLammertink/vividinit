@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="container">
+  <h3>Contact</h3>
+
+  <form action="{{ url_for('contact') }}" method=post>
+    {{ form.hidden_tag() }}
+
+    <form>
+      <div class="form-control">
+        <br>
+        {{ form.name.label}}<br>
+        {{ form.name }}<br>
+        <br>
+        {{ form.email.label }}<br>
+        {{ form.email }}
+
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <br />
+        {{ form.subject.label }}<br>
+        {{ form.subject }}<br>
+        <br />
+
+        {{ form.message.label }}<br>
+        {{ form.message }}<br>
+        <br />
+
+        {{ form.submit }}
+        <br>
+      </div>
+    </form>
+  </form>
+</div>
+
+
+{% endblock %}
