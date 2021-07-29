@@ -1,228 +1,279 @@
 {% extends 'base.html' %}
+
 {% block content %}
 
-    <section class="section-features js--section-features" id="features">
-        <div class="row">
-            <p class="long-copy">
-                Whether you’re a building your career or concentrate on being a stay-at home parent, it seems
-                that you have no time at all to take care of yourself. That is where I step in, to help you to create
-                your unique style and customized wardrobe. To save you time, frustration and money. To enlarge
-                your opportunities and minimise your carbon footprint. For a more conscious and sustainable
-                lifestyle.
-            </p>
-            <br/>
-            <br/>
-            <img src="{{ url_for('static', filename='images/pic_beautiful.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeIn">
+
+<div id="div-jumbotron">
+    <div id="hero" class="p-5 mb-4 bg-light round-3" style="width: 100%;height: 100vh;">
+        <div class="container-fluid py-5" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1100"
+            id="header-container" style="background: rgba(252,249,249,0.67);">
+            <h1 class="display-5 fw-bold" id="heading-about">Wardrobe Styling &amp; Organising
+            </h1>
+            <p class="text-center col-md-8 fs-4" id="hero-text">Giving you a personalised wardrobe which will make you
+                and our planet smile</p><a class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#learnmoreModal" role="button" id="btn-header" href="#"
+                style="background: rgba(249,91,91,0.75);">Learn more</a>
         </div>
-    </section>
+    </div>
+</div>
+<div id="div-about">
+    <section class="article-clean">
+        <div class="container">
+            <div class="row">
 
-    <section class="section-features js--section-features" id="about">
-        <div class="row">
-            <p class="long-copy">
-                <br/>
-                <br/>
-                Hi Beautiful,<br/>
-                I’m Eva, your Fashion Consultant, Personal Shopper and Wardrobe Organizer currently based in
-                The Hague, Netherlands.<br/>
-                Fashion is my muse. I want to make the world a happier place by letting you shine with your own
-                vivid beauty. With my background as a teacher and psychologist, I’m able to provide a
-                professional and safe environment. My work is tailor-made based on your personal preferences.
-                As we work with Kibbe body types, Seasonal Colour Palettes, we will indulge in choosing your
-                right clothes, accessories and fabrics.<br/>
-                Join me on an uplifting journey, together we make a positive difference.
-            </p>
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
 
-            <img src="{{ url_for('static', filename='images/shopping_wardrobe.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeInUp">
-            <br/>
-            <br/>
-            <p class="long-copy">
-                <b>SHOPPING YOUR WARDROBE</b><br/>
-                <i>Giving what you already own, a new lease of life!</i><br/><br/>
-                Would you like to free yourself from stress that you have nothing to wear? <br/>
-                I will help you to see the potential that your closet already has. Yes! It will be as you purchased a
-                whole new
-                wardrobe, without going shopping.<br/> I create outfits that meet your goals and you will be feeling
-                inspired and excited to get dressed every day.<br/><br/>
-                -- one-to-one consultation to determine what you want your image to convey.<br/>
-                -- photo documentary of various outfit combinations
-            </p>
-            <br/>
-            <br/>
-            <img src="{{ url_for('static', filename='images/wardrobe_consulting.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeInUp">
-            <br/>
-            <br/>
-            <p class="long-copy">
-                <b>WARDROBE CONSULTING</b><br/>
-                <i>Solidifying your sense of personal style</i><br/><br/>
-                We dive deeper into your closet and the choices you have made and want to make. In this
-                session we discuss your seasonal colour palette, your body type, your current style, how you
-                feel about your style and what changes you want to see. I give you my analysis and
-                recommendations and a course of action to start your uplifting journey.<br/><br/>
-                - styling and wardrobe evaluation which includes Style Persona,<br/>
-                - Body & Colour Analysis<br/>
-                - takeaway book ( style tips and more )
-            </p>
-            <br/>
-            <br/>
-            <img src="{{ url_for('static', filename='images/personal_shopping.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeInUp">
-            <br/>
-            <br/>
-            <p class="long-copy">
-                <b>PERSONAL SHOPPING</b><br/>
-                <i>Indulge in effectiveness</i><br/><br/>
-                Do you feel like you’re throwing money out of the window because you’re making the wrong
-                shopping decisions? I will help you to make the best possible purchases in person or online by
-                analyzing your needs, personality, lifestyle and budget.<br/>
-                Having sustainability in mind, supporting vintage and second-hand shopping, recommending
-                brands with sustainable and ethical fashion practices whenever possible.<br/>
-                - Offering shopping services in person and online<br/>
-                - follow up <br/>
+                <!-- Modal Learn More -->
+                <div class="modal fade" id="learnmoreModal" tabindex="-1" aria-labelledby="learnmoreModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="learnmoreModalLabel">Learn more</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <handwritten>Whether you’re building your career or concentrate on being a stay-at home parent, it
+                                seems that you have no time at all to take care of yourself. That is where I step in, to
+                                help you to create your unique style and customized wardrobe. To save you time,
+                                frustration and money. To enlarge your opportunities and minimise your carbon footprint.
+                                For a more conscious and sustainable lifestyle.</handwritten>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            </p>
-            <br/>
-            <br/>
-            <img src="{{ url_for('static', filename='images/wardobe_organizing.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeInUp">
-            <br/>
-            <br/>
-            <p class="long-copy">
-                <b>WARDROBE ORGANISING</b><br/>
-                <i>Your clothes are cared for</i><br/>
-                It is easy to feel overwhelmed as we have accumulated to our wardrobe year after year.<br/> I relief
-                that stress for you by helping you to decide what to keep, what to mend and what to donate.<br/>I will
-                make your closet lighter, brighter and totally refreshed.<br/> Transforming your wardrobe space into
-                something functional and beautiful.<br/>Cleaning out, de-cluttering, categorising your clothes by
-                season, function and colour.<br/> Using the KonMari method of folding, providing tips and unique
-                methods which will help you to get and to remain organised.<br/>
-            </p>
-            <br/>
-            <br/>
-            <img src="{{ url_for('static', filename='images/capsule_wardrobe.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeInUp">
-            <br/>
-            <br/>
-            <p class="long-copy">
-                <b>CAPSULE WARDOBE</b><br/>
-                <i>Less is more</i><br/><br/>
-                Helping you to build your dream wardrobe.<br/> A wardrobe with limited number of carefully selected
-                items of clothing and accessories which will go well together because they are timeless.<br/> As a
-                result you will always have something appropriate to wear.<br/> No more time to waste on searching
-                and choosing. De-cluttering made into an art.<br/> Welcome to your new phase!
-            </p>
-            <br/>
-            <br/>
-            <img src="{{ url_for('static', filename='images/about_me.jpg') }}" alt=""
-                 class="app-screen js--wp-2 animated fadeInUp">
-            <br/><br/>
-            <p class="long-copy">
-                Make your loved ones, friends, family, colleagues happy with my incredibly practical &
-                unbelievably sweet gift vouchers.<br/> We can tailor it according to your specification. Simply get in
-                touch.
-
-            </p>
-        </div>
-    </section>
-    <br/>
-    <br/>
-    <section class="section-testimonials" id="testimonials">
-        <div class="row">
-            <h2>Testimonials</h2>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <blockquote>
-                    I loved working with Eva, exploring my personal style and the shapes and colours that suit me
-                    best. Eva looks at every aspect of your lifestyle, personality, body shape and colouring to help
-                    you build a unique style that really works for you. It’s not just about looks; her advice really
-                    helps
-                    you feel your best. I was impressed with how intuitive she is in the way she gets to know you.
-                    Talking to her lead to quite a few “a-ha” moments for me. Eva is also extremely approachable,
-                    kind and warm with a beautiful energy that she brings to her work. I would highly recommend her
-                    both to those that need a complete overhaul and those that just looking for tweaks.
-
-
-                </blockquote>
-            </div>
-            <div class="col span-1-of-3">
-                <blockquote>
-                    Eva helped me to organise my closet for more functional and practical one. She was able to
-                    review my clothes with respect to colour, shapes, length, pattern, and made great suggestions
-                    for new outfits using my existing clothes. With a stellar eye for fashion she created looks for
-                    variety of occasions. She decluttered my wardrobe, my clothes were reduced to only things that I
-                    enjoy wearing and it is easy to find everything. Thank you!
-
-                </blockquote>
-            </div>
-            <div class="col span-1-of-3">
-                <blockquote>
-                    I enjoyed working with Eva. She is an energetic, enthusiastic, loving person. She helped me to
-                    understand my style, matched me with the right seasonal colour palette which completed my
-                    overall appearance. She brought brightness and fresh air to my closet.
-
-                </blockquote>
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div id="div-intro" class="intro">
+                        <h1 class="text-center" id="heading-intro"
+                            style="font-size: 48px;font-family: 'Libre Baskerville', serif;color: #838587;">Hi
+                            Beautiful,<br></h1>
+                        <p class="text-center" style="font-family: 'Libre Baskerville', serif;"><span
+                                class="by">by</span> <a href="#"> eva brunczvikova</a><span class="date">August 1st,
+                                2021</span></p><img class="img-fluid" data-aos="fade-up" data-aos-duration="700"
+                            id="img_about" src="/static/images/pic_beautiful.jpg">
+                    </div>
+                    <p class="text-center text-about" id="paragraph2-about">I’m Eva, your <strong><i><b>Fashion Consultant</b></i></strong>
+                        , <strong><i><b>Personal Shopper</b></i></strong> and <strong><i><b>Wardrobe Organizer</b></i></strong> currently based in
+                        The Hague,Netherlands.Fashion is my muse. I want to
+                        make the world a happier place by letting you shine with your own vivid beauty. With my
+                        background as a teacher and psychologist, I’m able to provide a professional and safe
+                        environment. My work is tailor-made based on your personal preferences.As we work with Kibbe
+                        body types, Seasonal Colour Palettes, we will indulge in choosing your right clothes,
+                        accessories and fabrics.Join me on an uplifting journey, together we make a positive
+                        difference.<br></p><button class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#learnmoreModal" id="btn-txt" type="button">Learn
+                        more</button>
+                    <div class="text">
+                        <p><br></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="section-form">
+</div>
+<div id="div-ui_card">
+    <h1> </h1>
+    <div class="container">
         <div class="row">
-            <h2>We're happy to hear from you</h2>
+            <div class="col-md-4">
+                <div class="blog-card blog-card-blog">
+                    <div class="blog-card-image">
+                        <a href="#"> <img class="img" src="/static/images/shopping_wardrobe.jpg"> </a>
+                        <div class="ripple-cont"></div>
+                    </div>
+                    <div class="blog-table">
+                        <h6 class="blog-category blog-text-success">
+                            <ion-icon size="large" name="basket"></ion-icon>
+                        </h6>
+                        <h4 class="blog-card-caption">
+                            <a href="#">SHOPPING YOUR WARDROBE</a>
+                        </h4>
+                        <p class="blog-card-description"><strong><i>Giving what you already own, a new lease of
+                                    life!</i></strong><br /><br />
+                            Would you like to free yourself from stress that you have nothing to wear? I will help you
+                            to see
+                            the potential that your closet already has. Yes! It will be as you purchased a whole new
+                            wardrobe, without going shopping. I create outfits that meet your goals and you will be
+                            feeling
+                            inspired and excited to get dressed every day.<br /><br />
+                            -- one-to-one consultation to determine what you want your image to convey.<br />
+                            -- photo documentary of various outfit combinations
+                        </p><br />
+                        <div class="ftr">
+                            <div class="author">
+                                <a href="#"> <img src="/static/images/personal_shopping.jpg" alt="..."
+                                        class="avatar img-raised"> <span>Lorem</span> </a>
+                            </div>
+                            <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="blog-card blog-card-blog">
+                    <div class="blog-card-image">
+                        <a href="#"> <img class="img" src="/static/images/wardrobe_consulting.jpg"> </a>
+                        <div class="ripple-cont"></div>
+                    </div>
+                    <div class="blog-table">
+                        <h6 class="blog-category blog-text-success">
+                            <ion-icon size="large" name="shirt"></ion-icon>
+                        </h6>
+                        <h4 class="blog-card-caption">
+                            <a href="#">WARDROBE CONSULTING</a>
+                        </h4>
+                        <p class="blog-card-description">
+                            <strong><i>Solidifying your sense of personal style</i></strong><br /><br />
+                            We dive deeper into your closet and the choices you have made and want to make. In this
+                            session we discuss your seasonal colour palette, your body type, your current style, how you
+                            feel about your style and what changes you want to see. I give you my analysis and
+                            recommendations and a course of action to start your uplifting journey.<br /><br />
+                            -- styling and wardrobe evaluation which includes Style Persona, Body & Colour
+                            Analysis<br />
+                            -- takeaway book ( style tips and more )<br /><br />
+                        </p><br />
+                        <div class="ftr">
+                            <div class="author">
+                                <a href="#"> <img src="https://picsum.photos/id/1005/5760/3840" alt="..."
+                                        class="avatar img-raised"> <span>Lorem</span> </a>
+                            </div>
+                            <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="blog-card blog-card-blog">
+                    <div class="blog-card-image">
+                        <a href="#"> <img class="img" src="/static/images/personal_shopping.jpg"> </a>
+                        <div class="ripple-cont"></div>
+                    </div>
+                    <div class="blog-table">
+                        <h6 class="blog-category blog-text-success">
+                            <ion-icon size="large" name="person"></ion-icon>
+                        </h6>
+                        <h4 class="blog-card-caption">
+                            <a href="#">PERSONAL SHOPPING</a>
+                        </h4>
+                        <p class="blog-card-description"><strong><i class="cherry_color">Indulge in
+                                    effectiveness</i></strong><br /><br />
+                            Do you feel like you’re throwing money out of the window because you’re making the wrong
+                            shopping decisions? I will help you to make the best possible purchases in person or online
+                            by analyzing your needs, personality, lifestyle and budget.
+                            Having sustainability in mind, supporting vintage and second-hand shopping, recommending
+                            brands with sustainable and ethical fashion practices whenever possible.<br /><br />
+                            - Offering shopping services in person and online
+                            - follow up
+                        </p><br />
+                        <div class="ftr">
+                            <div class="author">
+                                <a href="#"> <img src="https://picsum.photos/id/1005/5760/3840" alt="..."
+                                        class="avatar img-raised"> <span>Lorem</span> </a>
+                            </div>
+                            <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <form method="post" action="#" class="contact-form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="find-us">How did you find us?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
-                            <option value="friends" selected>Friends</option>
-                            <option value="search">Search engine</option>
-                            <option value="ad">Advertisement</option>
-                            <option value="other">Other</option>
-                        </select>
+    </div>
+</div>
+<div id="div-testimonials">
+    <div class="container">
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" id="carousel-t">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-9 text-center mx-auto testimonial-content"><img class="rounded-circle"
+                            src="/static/images/Testimonial%20female%20white.svg" width="100">
+                        <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
+                        <p class="text-center" style="color: rgb(255,255,255);font-family: 'Libre Baskerville', serif;">
+                            <i class="fa fa-quote-left"></i><em>&nbsp;I loved working with Eva, exploring my personal
+                                style and the shapes and colours that suit me best.Eva looks at every
+                                aspect of your lifestyle, personality, body shape and colouring to help you
+                                build a unique style that really works for you. It’s not just about looks, her advice
+                                really helpsyou feel your best.I was impressed with how intuitive she is
+                                in the way she gets to know you.Talking to her lead to quite a few “a-ha”
+                                moments for me. Eva is also extremely approachable, kind and warm with a
+                                beautiful energy that she brings to her work. I would highly recommend
+                                her both to those that need a complete overhaul and those that just looking
+                                for tweaks.</em><i class="fa fa-quote-right"></i><br></p>
+                        <p class="signature">J.Parkin, Corporate Communication Manager.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Drop us a line</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" placeholder="Your message"></textarea>
+                <div class="carousel-item">
+                    <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
+                            src="/static/images/Testimonial%20female%20white.svg" width="100">
+                        <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
+                        <p class="text-center" id="para-test-2"
+                            style="color: #ffffff;font-style: italic;font-family: 'Libre Baskerville', serif;"><i
+                                class="fa fa-quote-left"></i><em>&nbsp;Eva helped me to organize my closet for more
+                                functional and practical one. She was able to review my clothes with respect
+                                to colour, shapes, length, pattern, made great suggestions for new outfits
+                                using my existing clothes. With a stellar eye for fashion she created looks for
+                                variety of occasions. She decluttered my wardrobe, my clothes were reduced
+                                to only things that I enjoy wearing and it is easy to find everything. Thank
+                                you.&nbsp;</em><i class="fa fa-quote-right"></i><br></p>
+                        <p class="signature">P. Vennegoor - owner A-Way Events & Wellness B.V., Den Haag.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send it!">
+                <div class="carousel-item">
+                    <div class="col-9 offset-xl-1 text-center mx-auto testimonial-content"><img class="rounded-circle"
+                            src="/static/images/Testimonial%20female%20white.svg" width="100">
+                        <p class="text-center rating">5&nbsp;<i class="fa fa-star"></i></p>
+                        <p class="text-center" id="slider-3"
+                            style="font-style: italic;font-family: 'Libre Baskerville', serif;color: rgb(255,255,255);">
+                            <i class="fa fa-quote-left"></i><em>&nbsp; I enjoyed working with Eva. She is an energetic,
+                                enthusiastic, loving person. She helped me to understand my style, matched
+                                me with the right seasonal colour palette which completed my overall
+                                appearance. She brought brightness and fresh air to my closet.&nbsp;</em><i
+                                class="fa fa-quote-right"></i><br></p>
+                        <p class="signature" style="font-family: 'Libre Baskerville', serif;"> E.Floescher, artist,
+                            Moscow.</p>
                     </div>
                 </div>
-
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-t" role="button" data-bs-slide="prev"><span
+                        class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a
+                    class="carousel-control-next" href="#carousel-t" role="button" data-bs-slide="next"><span
+                        class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+            <ol class="carousel-indicators" id="indicator">
+                <li data-bs-target="#carousel-t" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel-t" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carousel-t" data-bs-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div id="div-contact">
+    <div class="container">
+        <section class="contact-clean" style="background: rgb(249,250,251);">
+            <form data-bss-recipient="a7944c949d37d3e9b987859392473756"
+                data-bss-subject="Incoming mail from vivivinit.com">
+                <h2 class="text-center">Contact me</h2>
+                <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name" required=""
+                        minlength="3" maxlength="25"></div>
+                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" required=""
+                        minlength="7" maxlength="50"></div>
+                <div class="mb-3"><textarea class="form-control" name="message" placeholder="Message" rows="14"
+                        required="" minlength="10" maxlength="150"></textarea></div>
+                <div class="mb-3"><button class="btn btn-primary" type="submit">send </button></div>
             </form>
-
-        </div>
-    </section>
+        </section>
+    </div>
+</div>
+</div>
+</section>
+</div>
 
 {% endblock %}

@@ -1,0 +1,104 @@
+#carousel-t {
+  background-color: #c3a27f;
+}
+
+#carousel-t .testimonial-content {
+  margin-top: 15px;
+}
+
+#carousel-t .carousel-control-next, .carousel-control-prev {
+  width: 13%;
+}
+
+#carousel-t .carousel-control-prev {
+  background: -webkit-linear-gradient(left, #c3a27f 100%,rgba(215,215,215,0) 100%);
+  background: linear-gradient(to right, #c3a27f 100%,rgba(215,215,215,0) 100%);
+  opacity: 1;
+}
+
+#carousel-t .carousel-control-next {
+  background: -webkit-linear-gradient(right, #c3a27f 100%,rgba(215,215,215,0) 100%);
+  background: linear-gradient(to left, #c3a27f 100%,rgba(215,215,215,0) 100%);
+  opacity: 1;
+}
+
+#carousel-t .carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #140000;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .2;
+  transition: opacity .6s ease;
+  border-radius: 50%;
+}
+
+#carousel-t .carousel-indicators .active {
+  opacity: .5;
+}
+
+#carousel-t .carousel-indicators {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#carousel-t .signature {
+  font-size: 24px;
+  font-style: normal;
+  font-family: 'Roboto Condensed', Arial, Sans;
+  font-weight: 700;
+  margin: 0;
+}
+
+#carousel-t .date {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#carousel-t p {
+  font-size: 18px;
+  font-family: 'Roboto Condensed', Arial, Sans;
+}
+
+#carousel-t .rating {
+  background-color: #f95b5b;
+  width: 56px;
+  display: block;
+  margin: 15px auto;
+  color: white;
+  border-radius: 25px;
+}
+
+#div-contact {
+}
+
+#para-me {
+  text-align: center;
+}
+
+#div-testimonials {
+  margin-top: 50px;
+}
+
+#para-test-2 {
+}
+
+#para-test-2 {
+  font-family: 'Libre Baskerville';
+}
+
+#indicator {
+}
+
+#carousel-2 {
+}
+

@@ -1,28 +1,33 @@
-<header>
-    <nav>
-
-        <div class="row">
-
-            <div class="item">
-                <img src="/static/favicons/coathanger_2_white.svg" alt="Vivitinit logo" class="logo"><br/>
-                <img src="/static/favicons/coathanger_2_black.svg" alt="Vivitinit logo" class="logo-black">
-                <br/><br/><br/>
-                <div class="handwriting"><p>Wardrobe Styling & Organising</p></div>
-            </div>
-            <ul class="main-nav js--main-nav">
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#email">Contact</a></li>
-            </ul>
-            <a class="mobile-nav-icon js--nav-icon">
-                <ion-icon name="menu" class="icon-big"></ion-icon>
-            </a>
-        </div>
-    </nav>
-
-   <div class="hero-text-box header-text-center">
-        <h1>Giving you a personalised wardrobe which will make you and our planet smile.</h1>
+<nav
+  class="navbar navbar-light navbar-expand-md fixed-top"
+  id="navbar"
+  style="background: #f8f6f6; color: #838587"
+>
+  <div class="container-fluid">
+    <button
+      data-bs-toggle="collapse"
+      class="navbar-toggler"
+      data-bs-target="#navcol-1"
+    >
+      <span class="visually-hidden">Toggle navigation</span
+      ><span class="navbar-toggler-icon"></span></button
+    ><a class="navbar-brand" id="header-logo" href="#">vividinit</a>
+    <div class="collapse navbar-collapse" id="navcol-1">
+      <ul
+        class="navbar-nav ms-auto"
+        style="font-family: 'Libre Baskerville', serif; font-size: 13px"
+      >
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-
-</header>
+  </div>
+</nav>

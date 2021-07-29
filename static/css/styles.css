@@ -1,0 +1,295 @@
+#header-logo {
+  font-family: 'Libre Baskerville';
+  font-size: 220%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+#hero {
+  text-align: center;
+  background: url('/static/images/pic_header.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: inherit;
+  color: rgb(240,244,248);
+  background-position: center top;
+  -webkit-transform: translateZ(0);
+}
+
+#header-container {
+  display: block;
+  position: relative;
+  top: 30%;
+  background: rgba(252,249,249,0.6);
+  color: rgb(131,133,135);
+  border-radius: 40px;
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 40px;
+  height: auto;
+  text-align: center;
+}
+
+#btn-header {
+  border-radius: 30px;
+  background: #f95b5b;
+  width: 150px;
+  border-style: none;
+}
+
+@media (min-width: 576px) {
+  #hero-text {
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+#cherry_color {
+  color: f95b5b;  
+}
+
+#paragraph-about-me {
+  color: rgb(85,87,88);
+  font-family: Lato, sans-serif;
+  text-align: center;
+  font-size: 13px;
+}
+
+#card_about_me {
+  width: 90%;
+  height: 100vh;
+}
+
+#div-about-me {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  color: rgb(244,247,249);
+  background: url("../../assets/img/pic_beautiful.jpg") top / cover no-repeat;
+}
+
+#image-about {
+  height: 100vh;
+  background-size: cover;
+}
+
+#p-about {
+  text-align: center;
+  width: 100%;
+}
+
+#btn-about {
+  display: block;
+  width: 150px;
+  border-radius: 40px;
+  background: #f95b5b;
+  border-style: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#header-about {
+  padding: 40px;
+}
+
+#article-about {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  background: url("../../assets/img/pic_beautiful.jpg") top / cover no-repeat;
+}
+
+#container-about {
+  height: auto;
+  background: rgba(249, 249, 249, 0.51);
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 30px;
+  color: rgb(238,243,248);
+  margin: 0 auto;
+}
+
+#heading-about {
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  width: 100%;
+  color: #7e7b78;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#article-about {
+  margin: 0 auto;
+}
+
+#about-container {
+  height: auto;
+  padding: 40px;
+  background: rgba(249,249,249,0.81);
+  color: rgb(133,135,139);
+  border-radius: 40px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 890px;
+}
+
+#about {
+  background: url("static/images/pic_beautiful.jpg") top / cover no-repeat;
+}
+
+#about-text {
+  padding: 20px;
+  color: #252525;
+}
+
+@media (min-width: 576px) {
+  .fs-4 {
+    font-size: calc(0.8rem + .3vw)!important;
+  }
+}
+
+@media (min-width: 300px) {
+  .fs-4 {
+    font-size: calc(0.75rem + .3vw)!important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .fs-4 {
+    font-size: calc(1.275rem + .3vw)!important;
+  }
+}
+
+#div-text {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#paragraph-text {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Libre Baskerville';
+  letter-spacing: 2px;
+  color: #838587;
+  line-height: 1.8em;
+}
+
+#btn-txt {
+  display: block;
+  margin: 0 auto;
+  background-color: #f95b5b;
+  border-radius: 40px;
+  width: 150px;
+  border-style: none;
+}
+
+#container-wardobe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+#div-image-wardrobe {
+  flex-basis: 50%;
+  background: url("https://cdn.bootstrapstudio.io/placeholders/1400x800.png") top / cover no-repeat;
+  height: auto;
+}
+
+#col-pict {
+  height: 100vh;
+  background: url("../../assets/img/pic_beautiful.jpg") top / cover no-repeat;
+  padding: 2px;
+}
+
+#beauty-pic {
+  background: url("../../assets/img/pic_beautiful.jpg") top / cover no-repeat;
+}
+
+#beauty-pic {
+  background-image: url('../../assets/img/pic_beautiful.jpg) no-repeat;
+}
+
+#col-text {
+  text-align: left;
+  padding: 2px;
+}
+
+#contact-form {
+  background-color: #56585b;
+}
+
+#paragraph2-about {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 10px;
+  color: #85857b;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#heading-intro {
+  font-family: 'Libre Baskerville';
+  letter-spacing: 1.5px;
+}
+
+#section-contact-form {
+  background: rgb(250,251,252);
+}
+
+#btn btn-primary {
+  background-color: #56585b;
+}
+
+#slide_1 {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#hero-text {
+  color: #c3a27f;
+  margin-top: 20px;
+}
+
+#container-testim {
+  background-color: rgba(195,162,127,0.77);
+  padding: 10%;
+  line-height: 145%;
+  position: relative;
+  margin-top: 5%;
+}
+
+#div-testim {
+  margin-top: 50px;
+  background-color: #c3a27f;
+}
+
+.text-about {
+  font-family: 'Libre Baskerville';
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #85878b;
+}
+
+.handwritten {
+  font-family: 'MonteCarlo', cursive;
+}
