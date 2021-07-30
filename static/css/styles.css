@@ -293,3 +293,7 @@ body {
 .handwritten {
   font-family: 'MonteCarlo', cursive;
 }
+
+.paragraph-text .jelly-bean {
+  color: #f95b5b;
+}
