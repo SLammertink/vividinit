@@ -5980,7 +5980,7 @@ fieldset:disabled .btn {
     overflow-x: hidden;
     overflow-y: auto;
     outline: 0;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Libre Baskerville', cursive;
     font-size: 150%;
     letter-spacing: 2px;
 }
@@ -6036,11 +6036,12 @@ fieldset:disabled .btn {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #fff;
+    background-color: RGBA(195, 162, 127, 0.85);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .3rem;
-    outline: 0
+    outline: 0;
+    color: #fff;
 }
 
 .modal-backdrop {

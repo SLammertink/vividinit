@@ -123,6 +123,11 @@
   font-weight: 400;
 }
 
+.center-text-about {
+  align-items: center;
+  justify-content: center;
+}
+
 #article-about {
   margin: 0 auto;
 }
@@ -233,6 +238,8 @@
   color: #85857b;
   line-height: 1.5;
   font-weight: 400;
+  align-items: center;
+  justify-content: center;
 }
 
 #heading-intro {
@@ -294,6 +301,13 @@ body {
   font-family: 'MonteCarlo', cursive;
 }
 
-.paragraph-text .jelly-bean {
+.jelly-bean {
   color: #f95b5b;
+}
+
+.text2-about {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

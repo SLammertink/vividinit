@@ -77,8 +77,8 @@ p {
   margin-bottom: 1rem;
   font-family: 'Libre Baskerville';
   margin-bottom: 50px;
-  margin-top: 50px;
-}
+  font-size: 18px;
+  }
 
 .blog-card .ftr {
   margin-top: 15px;
