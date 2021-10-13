@@ -1,3 +1,5 @@
+from instagramy.plugins.download import *
+from instagramy import *
 from forms import ContactForm
 from flask import Flask, render_template, request, flash
 from flask_mail import Message, Mail
@@ -25,7 +27,6 @@ mail = Mail(application)
 application.config.update(mail_settings)
 
 
-# start of the application
 @application.route('/index')
 @application.route('/')
 @application.route('/home')

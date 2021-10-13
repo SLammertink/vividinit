@@ -7,16 +7,15 @@
     <button
       data-bs-toggle="collapse"
       class="navbar-toggler"
-      data-bs-target="#navcol-1"
-    >
+      data-bs-target="#navcol-1">
       <span class="visually-hidden">Toggle navigation</span
-      ><span class="navbar-toggler-icon"></span></button
-    ><a class="navbar-brand" id="header-logo" href="#">vividinit</a>
+      ><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand" id="header-logo" href="#">vividinit</a>
+    <img src="{{ url_for('static', filename='/images/instagram_profile_picture.jpg') }}" alt="profile picture" class="round">
     <div class="collapse navbar-collapse" id="navcol-1">
       <ul
         class="navbar-nav ms-auto"
-        style="font-family: 'Libre Baskerville', serif; font-size: 13px"
-      >
+        style="font-family: 'Libre Baskerville', serif; font-size: 13px">
         <li class="nav-item"><a class="nav-link active" href="#div-jumbotron">Home</a></li>
         <li class="nav-item">
           <a class="nav-link active" href="#heading-intro">About Me</a>
@@ -26,6 +25,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#div-contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#heading-intro">Gallery</a>
         </li>
       </ul>
     </div>
