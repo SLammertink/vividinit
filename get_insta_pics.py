@@ -9,10 +9,10 @@ directory="static/images/instagram_"
 def get_pics():
     links = []
     session_id = "48842033096%3A9au9J0jH8XeNKT%3A5"
-    user = InstagramUser('vividinit', sessionid=session_id)
+    user = InstagramUser('vividinit', from_cache=True)
     posts = user.posts
     for post in posts:
-        links.append(post[8])
+        links.append(f"{post[7]}media/?size=l")
     return links
 
 def save_pics():

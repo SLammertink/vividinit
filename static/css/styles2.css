@@ -18,8 +18,8 @@ img:hover {
 
 .round {
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: auto;
     display: block;
     margin-top: auto;
     margin-bottom: auto;
